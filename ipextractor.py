@@ -15,7 +15,7 @@ args = parser.parse_args()
 cap = pyshark.FileCapture(args.pcap)
 report_path = os.path.join(args.destination, args.file)
 url = 'https://www.virustotal.com/api/v3/ip_addresses/'
-headers = {"accept": "application/json", "x-apikey":"b9b64c845a68a5057d91b6e8fd3711d152d2903a931f1f7003bb8f47f1f47df7"}
+headers = {"accept": "application/json", "x-apikey":"YOUR_VIRUS_TOTAL_API_KEY"}
 external_ip = set()
 ip_health = {}
 malicious_ip = {}
@@ -73,6 +73,7 @@ for packet in cap:
             report(dst)
 
 generate_report()
+
 
 
 
