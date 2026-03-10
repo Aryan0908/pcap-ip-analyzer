@@ -14,6 +14,10 @@ against VirusTotal.
 ## Requirements
 pip install pyshark requests
 
+## Setup
+1. Get a free VirusTotal API key at virustotal.com
+2. Replace the API key in ipextractor.py with your own key
+
 ## Usage
 python ipextractor.py -p <pcap_file> -d <output_directory> -f <report_filename>
 
